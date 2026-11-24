@@ -1,0 +1,137 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects & Publications</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #222;
+        }
+
+        .container {
+            padding: 50px 8%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #6c35a5;
+            margin-bottom: 35px;
+        }
+
+        .project-card, .publication-card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #7138a5;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee2ff;
+            color: #6c35a5;
+            padding: 7px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>My Projects</h1>
+
+    <div class="project-card">
+        <h2>Child Safety Net – IoT Driven Solution</h2>
+
+        <p>
+            Developed an IoT-based child safety device using
+            STM32F103C8T6 microcontroller to monitor children's
+            health parameters, air quality and GPS location.
+            The system sends emergency alerts to caretakers
+            through GSM technology.
+        </p>
+
+        <p><strong>Technologies Used:</strong></p>
+
+        <span class="tag">STM32</span>
+        <span class="tag">Embedded C</span>
+        <span class="tag">IoT</span>
+        <span class="tag">GPS</span>
+        <span class="tag">GSM</span>
+        <span class="tag">MAX30100</span>
+    </div>
+
+    <div class="project-card">
+        <h2>Reaction Tester Game</h2>
+
+        <p>
+            Developed a reaction tester game to test and improve
+            user response time through interactive challenges.
+        </p>
+
+        <p><strong>Technologies:</strong></p>
+
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+    </div>
+
+
+    <!-- PUBLICATIONS SECTION -->
+
+    <h1>My Publications</h1>
+
+    <div class="publication-card">
+
+        <h2>Child Safety Net – IoT Driven Solution</h2>
+
+        <p>
+            Presented a research paper based on my final-year
+            project at the IEEE ICIDCA 2025 International Conference.
+        </p>
+
+        <p>
+            <strong>Conference:</strong>
+            IEEE ICIDCA 2025
+        </p>
+
+        <p>
+            <strong>Publication Type:</strong>
+            Conference Research Paper
+        </p>
+
+        <p>
+            <strong>Research Area:</strong>
+            Internet of Things, Embedded Systems and Child Safety
+        </p>
+
+        <span class="tag">IEEE Conference</span>
+        <span class="tag">IoT Research</span>
+        <span class="tag">Embedded Systems</span>
+
+    </div>
+
+</div>
+
+</body>
+</html>

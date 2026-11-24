@@ -1,0 +1,113 @@
+
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<style>
+
+    .about {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 8%;
+        background: linear-gradient(120deg, #f5f0ff, #e9ddff);
+        font-family: Arial, sans-serif;
+    }
+
+    .about-content {
+        max-width: 750px;
+        text-align: center;
+    }
+
+    .about-content h3 {
+        color: #7545ed;
+        font-size: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 45px;
+        color: #29243d;
+        margin: 15px 0;
+    }
+
+    .about-content h1 span {
+        color: #7545ed;
+    }
+
+    .about-content h2 {
+        color: #555;
+        font-size: 25px;
+    }
+
+    .about-content p {
+        color: #666;
+        line-height: 1.8;
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #7545ed;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        margin: 10px 8px 0 0;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #5125bd;
+        transform: translateY(-3px);
+    }
+
+    @media(max-width: 750px) {
+
+        .about-content h1 {
+            font-size: 34px;
+        }
+
+        .about-content h2 {
+            font-size: 21px;
+        }
+    }
+
+</style>
+
+
+<section class="about">
+
+    <div class="about-content">
+
+        <h3>Hello, I'm</h3>
+
+        <h1>
+            Jyothi <span>Pamappagari</span>
+        </h1>
+
+        <h2>Python & Web Developer</h2>
+
+        <p>
+            I am a B.Tech graduate in Electronics and Communication Engineering
+            from Kalasalingam Academy of Research and Education
+            with a CGPA of 8.35.
+
+            I have knowledge of Python, Django, SQL, HTML,
+            CSS and JavaScript.
+
+            I am passionate about learning new technologies,
+            solving problems and developing creative
+            web applications.
+        </p>
+
+        <a href="#" class="btn">Learn More</a>
+
+    </div>
+
+</section>
+
+{% endblock content %}
+

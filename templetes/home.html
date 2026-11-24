@@ -1,0 +1,258 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<style>
+
+/* HOME PAGE */
+
+#home {
+    min-height: 550px;
+    padding: 80px 8%;
+    background: linear-gradient(
+        120deg,
+        #10162f,
+        #171c40,
+        #34217a
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* LEFT CONTENT */
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    color: #a83dff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #eeeeff;
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+
+.home-btn {
+    display: inline-block;
+    padding: 13px 30px;
+
+    background: linear-gradient(
+        90deg,
+        #873bff,
+        #bd38e9
+    );
+
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 8px 10px 0 0;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px #873bff88;
+}
+
+.home-btn.secondary {
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* RIGHT SIDE IMAGE */
+
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PHOTO FRAME */
+
+.profile-frame {
+    width: 350px;
+    height: 420px;
+    padding: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #a83dff,
+        #e34eea,
+        #5140b5
+    );
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 15px 40px #00000066,
+        0 0 25px #a83dff66;
+
+    transition: 0.4s;
+}
+
+.profile-frame:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow:
+        0 20px 50px #00000088,
+        0 0 35px #a83dff;
+}
+
+/* PROFILE PHOTO */
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 28px;
+    display: block;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 768px) {
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 6%;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-content h2 {
+        font-size: 23px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .home-image {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .profile-frame {
+        width: 270px;
+        height: 330px;
+    }
+
+}
+
+@media(max-width: 400px) {
+
+    .profile-frame {
+        width: 230px;
+        height: 290px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-btn {
+        padding: 11px 20px;
+    }
+
+}
+
+</style>
+
+
+<!-- HOME PAGE -->
+
+<section id="home">
+
+    <!-- LEFT SIDE CONTENT -->
+
+    <div class="home-content">
+
+        <h3>Hello, I'm</h3>
+
+        <h1>Jyothi</h1>
+
+        <h2>Python Developer</h2>
+
+        <p>
+            I am Pamappagari Jyothi, an Electronics
+            and Communication Engineering graduate.
+
+            I am passionate about Python programming,
+            web development and Artificial Intelligence.
+
+            I love learning new technologies and
+            building creative and responsive applications.
+        </p>
+
+        <!-- BUTTONS -->
+
+        <a href="#contact" class="home-btn">
+            Hire Me
+        </a>
+
+        <a href="#projects" class="home-btn secondary">
+            View Projects
+        </a>
+
+    </div>
+
+
+    <!-- RIGHT SIDE PROFILE IMAGE -->
+
+    <div class="home-image">
+
+        <div class="profile-frame">
+
+            <img
+                src="{% static 'image/passphoto.jpeg' %}"
+                alt="Jyothi Profile Photo"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock content %}
